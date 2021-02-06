@@ -135,7 +135,7 @@
     background-color:rgb(170, 197, 49); 
 }
 
-@media all and (max-width:376px){
+@media all and (min-width:376px) and (max-width:600px){
     .main{
         margin: 0;
         width: 100%;
