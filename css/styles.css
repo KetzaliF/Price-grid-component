@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    /*Primary colors*/
+    --cyan:hsl(179,62%,43%);
+    --brigth-yellow:hsl(71,73%,54%);
+    /*Neutral colors*/
+    --light-gray:hsl(204, 43%, 93%);
+    --grayish-blue:hsl(218, 22%, 67%);
+    --font:'Karla', sans-serif;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.main{
+    width: 75%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px var(--grayish-blue);
+    margin: 40px auto 20px auto;
+    font-family: var(--font);
+}
+
+.container__title{
+    margin:40px 50px 0px 40px;
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: var(--cyan);
+}
+
+.container__subtitle{
+    margin:20px 50px 20px 40px;
+    font-weight: 700;
+    font-size: 2.187rem;
+    color:var(--brigth-yellow);
+}
+
+.container__txt{
+    margin:0px 50px 20px 40px;
+    width: 1000px;
+    font-weight: 400;
+    font-size: 1.875rem;
+    color: var(--grayish-blue);
+    line-height: 50px;
+}
+
+.secondary{
+    display: flex;
+    width: 100%;
+}
+
+.container__left{
+    display: inline-block;
+    width: 50%;
+    height: 400px;
+    padding:50px 50px 50px 100px;
+    background-color: var(--cyan);
+    color: var(--light-gray);
+}
+
+.container__right{
+    display: inline-block;
+    width: 50%;
+    height: 400px;
+    padding:50px 50px 50px 100px;
+    background-color: var(--cyan);
+    opacity: 80%;
+    color: var(--light-gray);
+}
+
+.container__left-month{
+    font-weight: 700;
+    font-size: 1.875rem;
+    margin-bottom: 30px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.price__number{
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.price__month{
+    font-size: 1.562rem;
+    font-weight: 400;
+    opacity: 50%;
+}
+
+.container__left-txt{
+    font-size:1.562rem;
+    margin-bottom: 50px;
+}
+
+.button{
+    width: 70%;
+    height: 85px;
+    font-size: 1.562rem;
+    color: var(--light-gray);
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: var(--brigth-yellow);
+    border: none;
+    border-radius: 10px;
+}
+
+.container__right-title{
+    font-weight: 700;
+    font-size: 1.875rem;
+    margin-bottom: 30px;
+}
+
+.container__list{
+    list-style: none;
+}
+
+.list__txt{
+    font-size: 1.5rem;
+    opacity: 60%;
+    line-height: 35px;
+}
+
+.button:hover{
+    background-color:rgb(170, 197, 49); 
+}
+
+@media all and (max-width:376px){
+    .main{
+        margin: 0;
+        width: 100%;
+        border-radius: 0%;
+        box-shadow: none;
+    }
+
+    .container__title{
+        margin:40px 0px 0px 40px;
+        font-size: 2rem;
+    }
+
+    .container__subtitle{
+        margin:20px 0px 20px 40px;
+        font-size: 1.2rem;
+    }
+
+    .container__txt{
+        margin:0px 0px 20px 40px;
+        width: 80%;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    .secondary{
+        display: block;
+    }
+
+    .container__left{
+        width: 100%;
+        height: 300px;
+        padding:30px 30px 30px 30px;
+    }
+
+    .container__right{
+        width: 100%;
+        height: 300px;
+        padding:30px 30px 30px 30px;
+    }
+
+    .container__left-month{
+        font-size: 1.2rem;
+    }
+
+    .price__number{
+        font-size: 2.3rem;
+    }
+
+    .price__month{
+        font-size: 1.2rem;
+    }
+
+    .container__left-txt{
+        font-size:1.2rem;
+        margin-bottom: 50px;
+    }
+
+    .button{
+        width: 100%;
+        height: 60px;
+        font-size: 1.2rem;
+    }
+
+    .container__right-title{
+        font-size: 1.2rem;
+    }
+
+    .list__txt{
+        font-size: 1.1rem;
+    }
+}
